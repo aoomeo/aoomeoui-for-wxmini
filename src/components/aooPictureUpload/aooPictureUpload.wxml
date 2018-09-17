@@ -1,0 +1,17 @@
+<!--component/multiPicturesUpload/multiPicturesUpload.wxml-->
+<view id='multiPicturesUpload' class='componentContainer'>
+
+  <view class='imageContainer' style="{{'width:'+imageSize+'rpx;height:'+imageSize+'rpx;'}}" wx:if='{{images.length > 0 && item != null}}' wx:key="{{index}}" wx:for="{{images}}">
+    <image class='closeIcon' src='/images/icon_close.png' bindtap='removeImg' data-uuid="{{item.uuid}}"></image>
+
+    <view wx:if="{{item.status==='pending'}}" class='percentMask' style="{{'width:'+imageSize+'rpx;height:'+imageSize+'rpx;'}}">{{item.percent}}%</view>
+
+    <image class='Image' src='{{item.filePath?item.filePath:item.url}}' />
+
+  </view>
+
+  <view class='imageContainer' style="{{'width:'+imageSize+'rpx;height:'+imageSize+'rpx;'}}" wx:if='{{images.length < maxSize}}' bindtap="chooseImg">
+    <image class='Image' src='../../images/icon_add_picture.png' />
+  </view>
+
+</view>

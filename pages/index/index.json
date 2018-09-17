@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "aoo-input": "../../src/components/aooInput/aooInput",
+    "aoo-picture-upload":"../../src/components/aooPictureUpload/aooPictureUpload"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ecustRepairBusiness",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "aoomeoui_for_wxmini": "0.0.7",
+    "miniprogram-slide-view": "0.0.3"
+  }
+}

@@ -1,0 +1,3 @@
+<aoo-input class='test' placeholder="这是我的placeHolder" placeholderClass="testClass"/>
+
+<aoo-picture-upload/>

@@ -1,0 +1,10 @@
+<!--component/aooInput.wxml-->
+
+<view class='aooInputContainer' style="{{'background:'+backgroundColor +';width:'+ width }}">
+
+  <input value="{{textValue}}" placeholder='{{placeholder}}' focus='true' bindfocus="getFocus" bindblur="loseFocus" bindinput='countText' style="{{'font-size:'+fontSize+';color:'+fontColor+';'}}" maxlength="{{maxLength}}" placeholder-style="{{'color:'+placeholderColor+';font-size:'+fontSize+';'}}"
+    disabled='{{disabled}}' focus='{{focus}}' type="{{inputType}}" confirm-type="{{confirmType}}" />
+
+  <image hidden="{{ (clearType=='none') || ( clearType !== 'always' && (!inputFocusFlag || textValue.length === 0))}}" class='clearBtn' src='../../images/icon_close_grey.png' catchtap='clearText' />
+
+</view>

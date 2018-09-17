@@ -1,0 +1,26 @@
+/* component/aooInput.wxss */
+
+.aooInputContainer {
+  width: 100%;
+  height: auto;
+  padding: 15rpx 30rpx 15rpx 40rpx;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 50rpx;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aooInputContainer input {
+  flex-grow: 1;
+  margin-right: 5rpx;
+}
+
+.clearBtn {
+  width: 44rpx;
+  height: 44rpx;
+  flex-shrink: 0;
+}
