@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wxaef047937f7b9743",
-	"projectname": "ecustRepairBusiness",
+	"projectname": "aoomeoui-for-wxmini",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

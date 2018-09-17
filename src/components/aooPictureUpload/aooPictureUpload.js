@@ -7,17 +7,20 @@
 Component({
   properties: {
     url: String,
-
+    header: Object,
+    formData: Object,
+    fileName: {
+      type: String,
+      value: 'picture'
+    },
     maxSize: {
       type: Number,
       value: 6,
     },
-
     imageSize: {
       type: Number,
       value: 180,
     },
-
     imgUrls: { //将String数组 转成 对象数组
       type: Array,
       value: [],
@@ -37,7 +40,7 @@ Component({
           });
         }
       }
-    }
+    },
   },
 
   data: {
@@ -99,7 +102,9 @@ Component({
           const uploadTask = wx.uploadFile({
             url: self.data.url,
             filePath: tempFilePaths[0],
-            name: 'picture',
+            name: self.data.fileName,
+            header: self.data.header,
+            formData: self.data.formData,
             success: function (res) {
               if (res.statusCode === 200) {
                 let responseData = JSON.parse(res.data);
@@ -160,7 +165,6 @@ Component({
         },
       })
     },
-
     /**
      * public
      * 判断是否上传都已完成 

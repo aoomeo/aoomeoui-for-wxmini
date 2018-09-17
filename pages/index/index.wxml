@@ -1,3 +1,5 @@
-<aoo-input class='test' placeholder="这是我的placeHolder" placeholderClass="testClass"/>
+<aoo-input id='input' class='test' placeholder="这是我的placeHolder" placeholderClass="testClass"/>
 
-<aoo-picture-upload/>
+<aoo-picture-upload id='upload' url='http://111.231.84.33/SchoolRepairSupport/file/uploadPicture'/>
+
+<button bindtap='getValue'>test</button>

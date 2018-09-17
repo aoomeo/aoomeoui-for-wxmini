@@ -1,8 +1,9 @@
 // component/aooInput.js
 Component({
-  /**
-   * 组件的属性列表
-   */
+  behaviors: ['wx://component-export'],
+  export() {
+    return { value: this.data.textValue }
+  },
   properties: {
     backgroundColor: {  //输入框背景色
       type: String,
